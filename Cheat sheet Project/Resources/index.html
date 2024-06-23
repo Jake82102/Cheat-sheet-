@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Selectors Cheat Sheet</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+        <h1>CSS Selectors and Specifcity</h1>
+        <P>In CSS, Selectors are used to target HTML elements on web pages so they can be styled. </P>
+    <table>
+        <h2>Selectors</h2>
+        <thead>
+            <tr>
+                <th scope="col">Selector</th>
+                <th scope="col">Tag</th>
+                <th scope="col">Description</th>
+            </tr>
+        </thead>
+        <tbody>
+           <tr>
+                <td class="select">Type</td>
+                <td>h1 {}</td>
+                <td>The type selector matches the type of the element in the HTML document.</td>
+            </tr>
+            <tr> 
+                <td class="select">Universal</td>
+                <td>* {}</td>
+                <td>The universal selector slects all elements of any type.</td>
+            </tr>
+            <tr>
+                <td class="select">Class</td>
+                <td>< p class="example">...< /p ></td>
+                <td>When you want to style an element. In CSS .example</td>
+            </tr>
+            <tr>
+                <td class="select">ID</td>
+                <td>< h1 id="example">...< /h1 ></td>
+                <td>When you want to uniquely style an element. In CSS #example </td>
+            </tr>
+            <tr>
+                <td class="select">Attritbute</td>
+                <td>type[attribute*=value]</td>
+                <td>Attribute is used to select HTML elements that already have attributes like img</td>
+            </tr>
+            <tr>
+                <td class="select">Pseudo-class</td>
+                <td>p:example</td>
+                <td>A pseudo-class is used for when you click on a link thats blue and when you come back it's purple, or when youre filling out a form and the submit button is grayed out but when your done the button has color and is active.</td>
+            </tr>
+        </tbody>
+    </table>
+        <h2>Specifcity</h2>
+        <p>Specificity is the order by which the browser decides which CSS styles will be displayed.</p>
+    <table>
+        <thead>
+            <tr>
+               <th scope="col">Selector</th>
+               <th scope="col">Description</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">ID</th>
+                <td>ID is the most specfic selector. Will only change element.</td>
+            </tr>
+            <tr>
+                <th scope="row">Class</th>
+                <td>This is the second most specfic. Will only change the elements woth the same class.</td>
+            </tr>
+            <tr>
+                <th scope="row">type</th>
+                <td>This is the least specfic and will effect every element attached to it.</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
